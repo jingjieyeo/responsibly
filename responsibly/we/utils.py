@@ -11,10 +11,10 @@ from sklearn.metrics import accuracy_score
 
 
 WORD_EMBEDDING_MODEL_TYPES = (gensim.models.keyedvectors.KeyedVectors,
-                              gensim.models.keyedvectors.BaseKeyedVectors,
                               gensim.models.fasttext.FastText,
-                              gensim.models.word2vec.Word2Vec,
-                              gensim.models.base_any2vec.BaseWordEmbeddingsModel,)  # pylint: disable=line-too-long
+                              gensim.models.word2vec.Word2Vec,)
+                              #gensim.models.keyedvectors.BaseKeyedVectors,
+                              #gensim.models.base_any2vec.BaseWordEmbeddingsModel,)  # pylint: disable=line-too-long
 
 
 def round_to_extreme(value, digits=2):
